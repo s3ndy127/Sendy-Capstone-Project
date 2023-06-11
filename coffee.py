@@ -97,11 +97,19 @@ st.write('***')
 
 ################################################################
 production_country = coffee_production[['Country','Total_production']]
+top_production = production_country.sort_values('Total_production',ascending=False).head(10)
 top_prod = production_country.set_index('Country').sort_values('Total_production',ascending=False).head(20)
 
-tab1, tab2, tab3 = st.tabs(["📈 Chart","📈 Pie Chart", "🗃 Data"])
-tab1.subheader("Grafik Perbandingan 4 Negara produsen kopi di dunia")
+tab1, tab2, tab3 = st.tabs(["📈 Grafik Bar","📈 Grafik Perbandingan","📈 Grafik Pie"])
+tab1.subheader("Grafik produksi kopi dunia")
+tab2.subheader("Grafik Perbandingan 4 Negara produsen kopi di dunia")
 tab3.subheader("Data Negara Produksi Kopi Dunia")
+
+fig = px.bar(top_production, x='Country', y='Total_production',labels={
+                "Country": "Countries",
+                "Total_production": "Total Production"
+                },title='10 Negara dengan Total Produksi Tertinggi:', width=1300)
+tab1.plotly_chart(fig)
 
 countries = ['Brazil', 'Colombia', 'Viet Nam', 'Indonesia']
 
@@ -118,8 +126,8 @@ plt.legend()
 
 plt.show()
 
-tab1.pyplot(fig)
-tab1.write("Dari grafik diatas kita bisa tau bahwa negara Brazil selalu menjadi\
+tab2.pyplot(fig)
+tab2.write("Dari grafik diatas kita bisa tau bahwa negara Brazil selalu menjadi\
     menjadi negara dengan produksi kopi tertinggi di dunia selama periode 1990-2020\
         disisi lain negara produksi kopi di Vietnam setiap tahunnya terus meningkat\
             hingga pada akhirnya menjadi negara produsen kopi tertinggi kedua di dunia\
@@ -127,14 +135,11 @@ tab1.write("Dari grafik diatas kita bisa tau bahwa negara Brazil selalu menjadi\
                     disusul jauh dari negara vietnam dari tahun 1998")
 
 fig = px.pie(production_country, values='Total_production', names='Country', title='Persentase Produksi kopi dunia', width=1300, height=600)
-tab2.plotly_chart(fig)
-tab2.write("Selama periode tahun 1990-2020, Brazil menguasai produksi kopi di dunia\
+tab3.plotly_chart(fig)
+tab3.write("Selama periode tahun 1990-2020, Brazil menguasai produksi kopi di dunia\
     dengan 33.3% disusul dengan negara Vietnam sebanyak 12.8%, negara Colombia dengan\
         9.57%. Sedangkan Indonesia sendiri hanya sebanyak 6.28% dari total keseluruhan produksi kopi dunia. Dengan\
             kata lain, sekitar 61.95% dari total keseluruhan produksi kopi dikuasai oleh ke-4 negara-negara tersebut")
-
-tab3.dataframe(coffee_production.set_index('Country').sort_values('Total_production',ascending=False).head(20))
-
 st.write("***")
 
 top_domestic_consumption = coffee_domestic_consumption[['Country', 'Total_domestic_consumption']].sort_values(by=['Total_domestic_consumption'], ascending=False).head(20)
