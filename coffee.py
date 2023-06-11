@@ -170,7 +170,7 @@ with col:
     st.write("1. Negara Brazil merupakan Negara peringkat 1 dalam ekspor,konsumsi,dan produksi (menguasai 1/3 dari produksi kopi) di dunia")
     st.write("2. Negara Vietnam menduduki peringkat 2 setelah brazil dalam produksi dan ekspor namun peringkat ke-9 dalam konsumsi kopi dunia")
     st.write("3. Negara USA menduduki sebagai negara importir kopi, dan konsumsi kopi import terbesar di dunia")
-    st.write("4. Negara Indonesia menduduki peringkat 4 dalam produksi kopi dunia dengan total 12.8% dari total produksi kopi dunia perido 1990-2020\
+    st.write("4. Negara Indonesia menduduki peringkat 4 dalam produksi kopi dunia dengan total 12.8% dari total produksi kopi dunia periode 1990-2020\
         ,untuk peringkat konsumsi Indonesia ada di peringkat ke-2 setelah Brazil")
 
 
