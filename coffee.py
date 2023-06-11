@@ -54,7 +54,7 @@ with center:
 st.write('Kopi adalah salah satu minuman yang paling populer dan mendunia. Dikenal dengan rasa uniknya dan efek stimulasi kafein yang memberikan energi, kopi telah menjadi favorit bagi jutaan orang di berbagai belahan dunia. \
     Lebih dari sekadar minuman, kopi juga memiliki sejarah panjang dan telah menjadi bagian tak terpisahkan dari budaya dan industri di seluruh dunia. \
         Dalam periode tahun 1990 hingga 2020, industri kopi mengalami evolusi yang mengagumkan, didukung oleh data dan analisis yang disediakan oleh International Coffee Organization (ICO). \
-            Tren dan inovasi dalam produksi, konsumsi, serta preferensi konsumen telah memberikan dampak signifikan pada industri kopi secara global. \Dalam analisis berikut, akan dipaparkan perkembangan industri kopi dari tahun 1990 hingga 2020.')
+            Tren dan inovasi dalam produksi, konsumsi, serta preferensi konsumen telah memberikan dampak signifikan pada industri kopi secara global. Dalam analisis berikut, akan dipaparkan perkembangan industri kopi dari tahun 1990 hingga 2020.')
 
 st.write("***")
 st.title('Total Ekspor dan Impor Kopi di Dunia dari tahun 1990-2020')
