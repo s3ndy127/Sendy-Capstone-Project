@@ -124,8 +124,6 @@ plt.xlabel('Time')
 plt.ylabel('Production')
 plt.legend()
 
-plt.show()
-
 tab2.pyplot(fig)
 tab2.write("Dari grafik diatas kita bisa tau bahwa negara Brazil selalu menjadi\
     menjadi negara dengan produksi kopi tertinggi di dunia selama periode 1990-2020\
