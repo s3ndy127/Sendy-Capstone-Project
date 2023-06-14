@@ -169,12 +169,11 @@ _, col, _ = st.columns([1,2,1])
 with col:
     st.write("Berdasarkan analisis yang telah dilakukan dapat diambil beberapa point penting")
     st.write("1. Negara yang mendominasi Ekspor dan Produksi kopi di dunia, kebanyakan berasal dari negara Amerika Selatan, Afrika dan Asia Tenggara")
-    st.write("2. Negara yang menjadi tujuan untama dari ekspor kopi rata-rata berasal dari negara Amerika Utara, Eropa dan beberapa negara Asia")
+    st.write("2. Negara yang menjadi tujuan utama dari ekspor kopi rata-rata berasal dari negara Amerika Utara, Eropa dan beberapa negara Asia")
     st.write("3. Negara Brazil merupakan Negara peringkat 1 dalam ekspor,konsumsi,dan produksi (menguasai 1/3 dari produksi kopi) di dunia")
     st.write("4. Negara Vietnam menduduki peringkat 2 setelah brazil dalam produksi dan ekspor namun peringkat ke-9 dalam konsumsi kopi dunia")
     st.write("5. Negara USA menduduki sebagai negara importir kopi, dan konsumsi kopi import terbesar di dunia")
-    st.write("6. Negara Indonesia menduduki peringkat 4 dalam produksi kopi dunia dengan total 12.8% dari total produksi kopi dunia periode 1990-2020\
-        ,untuk peringkat konsumsi Indonesia ada di peringkat ke-2 setelah Brazil")
+    st.write("6. Negara Indonesia menduduki peringkat 4 dalam produksi kopi dunia, untuk peringkat konsumsi Indonesia ada di peringkat ke-2 setelah Brazil")
 
 
 
