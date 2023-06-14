@@ -71,8 +71,8 @@ with col1:
                 "Total_export": "Total Export"
                 },title='10 Negara dengan Total Ekspor Tertinggi:')
     st.plotly_chart(fig)
-    st.write("Berdasarkan grafik diatas, Indonesia menempati peringkat ke-4 dibawah negara seperti Brazil, Viet Nam, dan Colombia\
-         dalam hal ekspor kopi dengan total jumlah ekspor sebanyak 10,607,940,000 kg atau 10.6jt ton selama periode 1990-2020.")
+    st.write("Berdasarkan grafik diatas, negara Brazil menempati peringkat pertama sebagai negara dengan ekspor\
+        terbanyak di dunia yaitu sebanyak 33.8jt ton kopi selama periode 1990-2020, disusul oleh negara seperti Viet Nam, Colombia, dan Indonesia.")
 
 with col2:
     top_import = coffee_import[['Country', 'Total_import']].sort_values(by=['Total_import'], ascending=False).head(10)
@@ -82,7 +82,7 @@ with col2:
                 },title='10 Negara dengan Total Impor Tertinggi:')
     st.plotly_chart(fig)
     st.write("Dari grafik diatas, menunjukan bahwa negara USA menjadi negara importir kopi paling banyak dunia\
-        yaitu sebanyak 42,507,660,000 kg atau 42.5jt ton selama periode 1990-2020, disusul oleh negara seperti Jerman, Italy dan Jepang")
+        yaitu sebanyak 42.5jt ton selama periode 1990-2020, disusul oleh negara seperti Jerman, Italy dan Jepang")
 
 st.write('***')
 
@@ -149,7 +149,7 @@ fig = px.bar(top_domestic_consumption, x='Country', y='Total_domestic_consumptio
                  },title='Negara dengan Konsumsi Kopi Domestic Tertinggi', width=1300, height=600)
 st.plotly_chart(fig)
 st.write('Dari data konsumsi kopi domestik diatas menunjukan bahwa negara Brazil memiliki angka konsumsi kopi tertinggi dibanding dengan\
-    negara negara produsen kopi lainnya yaitu sebanyak 27.824.700.000 kg atau 27,8jt ton selama periode 1990-2020, disusul oleh negara seperti Indonesia, Ethopia, dan Mexico.')
+    negara negara produsen kopi lainnya yaitu sebanyak 27,8jt ton selama periode 1990-2020, disusul oleh negara seperti Indonesia, Ethopia, dan Mexico.')
 
 top_import_consumption = coffee_importers_consumption[['Country', 'Total_import_consumption']].sort_values(by=['Total_import_consumption'], ascending=False).head(20)
 top_import_consumption.head(10)
@@ -160,17 +160,19 @@ fig = px.bar(top_import_consumption, x='Country', y='Total_import_consumption', 
                  },title='Negara dengan Konsumsi Kopi Import Tertinggi', width=1300, height=600)
 st.plotly_chart(fig)
 st.write('Disisi lain, Negara USA menempati peringkat pertama sebagai negara Importir kopi dengan tingkat konsumsi tertinggi di dunia\
-    yaitu sebanyak 37.816.800.000 kg atau 37.8jt ton selama periode 1990-2020, disusul oleh Jerman dan Jepang')
+    yaitu sebanyak 37.8jt ton selama periode 1990-2020, disusul oleh Jerman dan Jepang')
 
 st.markdown('<div style="text-align: center;font-size:40px;font-weight:bold;color:black;">Kesimpulan</div>', unsafe_allow_html=True)
 _, col, _ = st.columns([1,2,1])
 
 with col:
     st.write("Berdasarkan analisis yang telah dilakukan dapat diambil beberapa point penting")
-    st.write("1. Negara Brazil merupakan Negara peringkat 1 dalam ekspor,konsumsi,dan produksi (menguasai 1/3 dari produksi kopi) di dunia")
-    st.write("2. Negara Vietnam menduduki peringkat 2 setelah brazil dalam produksi dan ekspor namun peringkat ke-9 dalam konsumsi kopi dunia")
-    st.write("3. Negara USA menduduki sebagai negara importir kopi, dan konsumsi kopi import terbesar di dunia")
-    st.write("4. Negara Indonesia menduduki peringkat 4 dalam produksi kopi dunia dengan total 12.8% dari total produksi kopi dunia periode 1990-2020\
+    st.write("1. Negara yang mendominasi Ekspor dan Produksi kopi di dunia, kebanyakan berasal dari negara Amerika Selatan, Afrika dan Asia Tenggara")
+    st.write("2. Negara yang menjadi tujuan untama dari ekspor kopi rata-rata berasal dari negara Amerika Utara, Eropa dan beberapa negara Asia")
+    st.write("3. Negara Brazil merupakan Negara peringkat 1 dalam ekspor,konsumsi,dan produksi (menguasai 1/3 dari produksi kopi) di dunia")
+    st.write("4. Negara Vietnam menduduki peringkat 2 setelah brazil dalam produksi dan ekspor namun peringkat ke-9 dalam konsumsi kopi dunia")
+    st.write("5. Negara USA menduduki sebagai negara importir kopi, dan konsumsi kopi import terbesar di dunia")
+    st.write("6. Negara Indonesia menduduki peringkat 4 dalam produksi kopi dunia dengan total 12.8% dari total produksi kopi dunia periode 1990-2020\
         ,untuk peringkat konsumsi Indonesia ada di peringkat ke-2 setelah Brazil")
 
 
