@@ -100,8 +100,8 @@ production_country = coffee_production[['Country','Total_production']]
 top_production = production_country.sort_values('Total_production',ascending=False).head(10)
 top_prod = production_country.set_index('Country').sort_values('Total_production',ascending=False).head(20)
 
+st.title("Produksi Kopi Dunia")
 tab1, tab2, tab3 = st.tabs(["📈 Grafik Bar","📈 Grafik Perbandingan","📈 Grafik Pie"])
-tab1.subheader("Grafik produksi kopi dunia")
 tab2.subheader("Grafik Perbandingan 4 Negara produsen kopi di dunia")
 tab3.subheader("Data Negara Produksi Kopi Dunia")
 
