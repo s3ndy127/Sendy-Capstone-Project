@@ -139,6 +139,7 @@ tab3.write("Selama periode tahun 1990-2020, Brazil menguasai produksi kopi di du
         9.57%. Sedangkan Indonesia sendiri hanya sebanyak 6.28% dari total keseluruhan produksi kopi dunia. Dengan\
             kata lain, sekitar 61.95% dari total keseluruhan produksi kopi dikuasai oleh ke-4 negara-negara tersebut")
 st.write("***")
+st.title("Konsumsi Kopi Dunia")
 
 top_domestic_consumption = coffee_domestic_consumption[['Country', 'Total_domestic_consumption']].sort_values(by=['Total_domestic_consumption'], ascending=False).head(20)
 top_domestic_consumption.head(10)
