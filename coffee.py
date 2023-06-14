@@ -43,7 +43,7 @@ with st.sidebar:
     st.markdown('<div style="text-align:center;font-size:20px;color:black;">Sendy Saputra</div>', unsafe_allow_html=True)
     st.markdown('<div style="text-align:center;font-size:15px;color:black;">sendy.saputra10@gmail.com</div>', unsafe_allow_html=True)
     with st.expander("Data Source"):
-        st.write("Data yang digunakan berasal dari dua sumber yaitu https://www.ico.org/new_historical.asp untuk data industri kopi dunia tahun 1990-2020")
+        st.write("Data yang digunakan berasal dari https://www.ico.org/new_historical.asp untuk data industri kopi dunia tahun 1990-2020")
 
 # Titles
 _, center, _ = st.columns([1,2,1])
