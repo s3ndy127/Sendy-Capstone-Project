@@ -59,10 +59,6 @@ st.write('Kopi adalah salah satu minuman yang paling populer dan mendunia. Diken
 st.write("***")
 st.title('Total Ekspor dan Impor Kopi di Dunia dari tahun 1990-2020')
 
-################################################################
-# Main Menu
-################################################################
-
 col1, col2 = st.columns(2)
 with col1:
     top_export = coffee_export[['Country', 'Total_export']].sort_values(by=['Total_export'], ascending=False).head(10)
@@ -88,11 +84,11 @@ st.write('***')
 
 col1, col2 = st.columns(2)
 with col1:
-    st.metric('Total Ekspor 1990-2020', sum(coffee_export['Total_export']))
-    st.metric('Total Ekspor Periode 2019-2020', sum(coffee_export['2019']))
+    st.metric('Total Ekspor 1990-2020', '156 Juta Ton Kopi')
+    st.metric('Total Ekspor Periode 2019-2020', '3 Juta Ton Kopi')
 with col2:
-    st.metric('Total Impor 1990-2020', sum(coffee_import['Total_import']))
-    st.metric('Total Impor Periode 2019-2020', sum(coffee_import['2019']))
+    st.metric('Total Impor 1990-2020', '177 Juta Ton Kopi')
+    st.metric('Total Impor Periode 2019-2020', '8 Juta Ton Kopi')
 st.write('***')
 
 ################################################################
